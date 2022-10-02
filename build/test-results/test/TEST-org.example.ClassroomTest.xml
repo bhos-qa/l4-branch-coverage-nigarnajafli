@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.ClassroomTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-10-02T14:17:34" hostname="NIGARMAC" time="0.025">
+<testsuite name="org.example.ClassroomTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-10-02T16:17:32" hostname="NIGARMAC" time="0.045">
   <properties/>
-  <testcase name="It should find the maximum result" classname="org.example.ClassroomTest" time="0.019"/>
-  <testcase name="It should find the most frequent result" classname="org.example.ClassroomTest" time="0.0"/>
-  <testcase name="It should find the mean of results" classname="org.example.ClassroomTest" time="0.001"/>
+  <testcase name="It should find the maximum result" classname="org.example.ClassroomTest" time="0.034"/>
+  <testcase name="It should find the most frequent result" classname="org.example.ClassroomTest" time="0.001"/>
+  <testcase name="It should find the mean of results" classname="org.example.ClassroomTest" time="0.004"/>
   <testcase name="It should find the number of students" classname="org.example.ClassroomTest" time="0.001"/>
   <testcase name="It should find the minimum result" classname="org.example.ClassroomTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
