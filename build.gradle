@@ -42,6 +42,5 @@ sonarqube {
         property "sonar.jacoco.reportPath", "build/jacoco/test.exec"
         property "sonar.junit.reportsPath", "build/test-results/test"
         property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/main.xml"
-        property "sonar.qualitygate.wait", true
     }
 }
