@@ -1,11 +1,8 @@
 package org.example;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Classroom {
     int[] finalResults = new int[]{90, 95, 98, 100, 84, 80, 50, 60, 61, 84, 90, 96, 70, 20, 40, 75, 66};
@@ -139,27 +136,10 @@ public class Classroom {
         return (double)(finalResults[(n - 1) / 2] + finalResults[n / 2]) / 2.0;
     }
 
-    public void vulnerableCode() {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter Username");
-        String user = sc.nextLine();
-
-        String user_path = ".\\Data\\"+user;
-
-        File file = new File(user_path);
-
-        try {
-            String comm = "cmd.exe /c dir "+user_path;
-            Process process = Runtime.getRuntime().exec(comm);
-            BufferedReader stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));
-
-            String s = null;
-            while ((s = stdInput.readLine()) != null) {
-                System.out.println(s);
-            }
-        }
-        catch (IOException e) {
-            System.out.println("Error executing command");
-        }
+    void unsafeProgram() throws IOException {
+        File tempDir;
+        tempDir = File.createTempFile("", ".");
+        tempDir.delete();
+        tempDir.mkdir();
     }
 }
